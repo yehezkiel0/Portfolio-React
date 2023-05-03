@@ -7,15 +7,15 @@ import React, { useRef } from "react";
 import LiIcon from "@/components/LiIcon";
 
 const Details = ({ title, description }) => {
-    const ref = useRef(null);
+    const reff = useRef(null);
     return (
-        <li ref={ref} className="my-8 first:mt-0 last:mb-0">
-            <LiIcon reference={ref} />
+        <li ref={reff} className="my-8 first:mt-0 last:mb-0">
+            <LiIcon reference={reff} />
             <motion.div
                 initial={{ y: 50 }}
                 whileInView={{ y: 0 }}
                 transition={{ duration: 0.8, type: "spring" }}
-                className="flex flex-col items-start justify-start flex-wrap w-[90%] m-0"
+                className="flex flex-col items-start justify-start flex-wrap w-[90%]"
             >
                 <h1 className="font-bold text-dark dark:text-light">{title}</h1>
                 <p className="text-dark dark:text-light sm:text-base">
@@ -38,12 +38,12 @@ const skills = () => {
                 <title>JPM | Skills Page</title>
                 <meta name="description" content="Skills JPM" />
             </Head>
-            <Layout className="pt-16">
-                <AnimatedText
-                    text="Expertise to help bring your ideas to life"
-                    className=" mb-16"
-                />
-                <main className="flex w-full flex-col items-center justify-center sm:pr-4">
+            <main className="flex items-center text-dark w-screen min-h-screen dark:text-light">
+                <Layout className="pt-16">
+                    <AnimatedText
+                        text="Expertise to help bring your ideas to life"
+                        className=" mb-16"
+                    />
                     <h2 className="mb-4 text-3xl font-bold uppercase text-dark/75 dark:text-light/75">
                         Skills
                     </h2>
@@ -55,7 +55,7 @@ const skills = () => {
                             style={{ scaleY: scrollYProgress }}
                             className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light sm:left-3"
                         />
-                        <ul className="w-full flex flex-col items-start justify-between ml-[70px] sm:ml-[60px]">
+                        <ul className="w-full flex flex-col items-start justify-start pl-[70px] sm:pl-[60px]">
                             <Details
                                 title="Next.js"
                                 description="(May 2023): With Next.js, I learned how to build server-side rendered React applications that are fast, scalable, and easy to maintain. I learned how to use Next.js features like automatic code splitting, server-side rendering, and static site generation to improve performance and user experience."
@@ -94,8 +94,8 @@ const skills = () => {
                             />
                         </ul>
                     </div>
-                </main>
-            </Layout>
+                </Layout>
+            </main>
         </>
     );
 };
