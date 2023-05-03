@@ -17,8 +17,8 @@ const Details = ({ title, description }) => {
                 transition={{ duration: 0.8, type: "spring" }}
                 className="flex flex-col items-start justify-start flex-wrap w-[90%]"
             >
-                <h1 className="font-bold text-dark dark:text-light">{title}</h1>
-                <p className="text-dark dark:text-light sm:text-base">
+                <h1 className="font-bold text-dark dark:text-light cursor-default">{title}</h1>
+                <p className="text-dark dark:text-light sm:text-base cursor-default">
                     {description}
                 </p>
             </motion.div>
@@ -30,7 +30,7 @@ const skills = () => {
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({
         target: ref,
-        offset: ["start end", "center start"],
+        offset: ["start center", "center start"],
     });
     return (
         <>
@@ -38,13 +38,13 @@ const skills = () => {
                 <title>JPM | Skills Page</title>
                 <meta name="description" content="Skills JPM" />
             </Head>
-            <main className="flex items-center text-dark w-screen min-h-screen dark:text-light">
+            <main className="flex items-center text-dark w-screen min-h-screen dark:text-light text-center">
                 <Layout className="pt-16">
                     <AnimatedText
                         text="Expertise to help bring your ideas to life"
                         className=" mb-16"
                     />
-                    <h2 className="mb-4 text-3xl font-bold uppercase text-dark/75 dark:text-light/75">
+                    <h2 className="mb-4 text-3xl font-bold uppercase text-dark/75 dark:text-light/75 cursor-default">
                         Skills
                     </h2>
                     <div

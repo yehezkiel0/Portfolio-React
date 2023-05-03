@@ -20,10 +20,10 @@ const about = () => {
                     />
                     <div className="grid w-full grid-cols-8 gap-8">
                         <div className="col-span-4 flex flex-col items-start justify-start md:col-span-8">
-                            <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light">
+                            <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light cursor-default">
                                 About Me
                             </h2>
-                            <p className="my-4 font-medium">
+                            <p className="my-4 font-medium cursor-default">
                                 I&apos;m passionate about creating dynamic,
                                 user-friendly web applications that help
                                 businesses and individuals achieve their goals.
@@ -32,7 +32,7 @@ const about = () => {
                                 technologies, and I&apos;m always eager to learn
                                 more.
                             </p>
-                            <p className="my-4 font-medium">
+                            <p className="my-4 font-medium cursor-default">
                                 I&apos;m a detail-oriented problem solver who
                                 enjoys tackling complex challenges, and I&apos;m
                                 always looking for opportunities to improve my
