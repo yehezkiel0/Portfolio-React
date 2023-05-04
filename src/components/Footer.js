@@ -7,7 +7,7 @@ const Footer = () => {
         <footer className="w-full border-t-2 border-solid border-dark font-medium text-lg dark:text-light dark:border-light sm:text-base">
             <Layout className="py-8 flex items-center justify-center lg:flex-col lg:py-6">
                 <span className="cursor-default mr-1 text-center">
-                    {new Date().getFullYear()} &copy; All Rigths Reserved.
+                    {new Date().getFullYear()} &copy; All Rights Reserved.
                 </span>
                 <div
                     className="flex
