@@ -49,6 +49,7 @@ export const InstagramIcon = ({ className, ...rest }) => (
     {...rest}
     className={`w-full h-auto scale-125 ${className}`}
   >
+    {" "}
     <radialGradient
       id="yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1"
       cx="19.38"
@@ -56,18 +57,18 @@ export const InstagramIcon = ({ className, ...rest }) => (
       r="44.899"
       gradientUnits="userSpaceOnUse"
     >
-      <stop offset="0" stop-color="#fd5"></stop>
-      <stop offset=".328" stop-color="#ff543f"></stop>
-      <stop offset=".348" stop-color="#fc5245"></stop>
-      <stop offset=".504" stop-color="#e64771"></stop>
-      <stop offset=".643" stop-color="#d53e91"></stop>
-      <stop offset=".761" stop-color="#cc39a4"></stop>
-      <stop offset=".841" stop-color="#c837ab"></stop>
+      <stop offset="0" stopColor="#fd5"></stop>
+      <stop offset=".328" stopColor="#ff543f"></stop>
+      <stop offset=".348" stopColor="#fc5245"></stop>
+      <stop offset=".504" stopColor="#e64771"></stop>
+      <stop offset=".643" stopColor="#d53e91"></stop>
+      <stop offset=".761" stopColor="#cc39a4"></stop>
+      <stop offset=".841" stopColor="#c837ab"></stop>
     </radialGradient>
     <path
       fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)"
       d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"
-    ></path>
+    ></path>{" "}
     <radialGradient
       id="yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2"
       cx="11.786"
@@ -76,8 +77,8 @@ export const InstagramIcon = ({ className, ...rest }) => (
       gradientTransform="matrix(1 0 0 .6663 0 1.849)"
       gradientUnits="userSpaceOnUse"
     >
-      <stop offset="0" stop-color="#4168c9"></stop>
-      <stop offset=".999" stop-color="#4168c9" stop-opacity="0"></stop>
+      <stop offset="0" stopColor="#4168c9"></stop>
+      <stop offset=".999" stopColor="#4168c9" stopOpacity="0"></stop>
     </radialGradient>
     <path
       fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)"
@@ -134,17 +135,19 @@ export const SunIcon = ({ className, ...rest }) => (
     >
       <g strokeDasharray="2">
         <path d="M12 21v1M21 12h1M12 3v-1M3 12h-1">
+          {" "}
           <animate
             fill="freeze"
-            attributeName="stroke-dashoffset"
+            attributeName="strokeDashoffset"
             dur="0.2s"
             values="4;2"
           />
         </path>
         <path d="M18.5 18.5l0.5 0.5M18.5 5.5l0.5 -0.5M5.5 5.5l-0.5 -0.5M5.5 18.5l-0.5 0.5">
+          {" "}
           <animate
             fill="freeze"
-            attributeName="stroke-dashoffset"
+            attributeName="strokeDashoffset"
             begin="0.2s"
             dur="0.2s"
             values="4;2"
@@ -161,17 +164,18 @@ export const SunIcon = ({ className, ...rest }) => (
     </g>
     <g fill="currentColor" fillOpacity="0">
       <path d="m15.22 6.03l2.53-1.94L14.56 4L13.5 1l-1.06 3l-3.19.09l2.53 1.94l-.91 3.06l2.63-1.81l2.63 1.81z">
+        {" "}
         <animate
           id="lineMdSunnyFilledLoopToMoonFilledLoopTransition0"
           fill="freeze"
-          attributeName="fill-opacity"
+          attributeName="fillOpacity"
           begin="0.6s;lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+6s"
           dur="0.4s"
           values="0;1"
         />
         <animate
           fill="freeze"
-          attributeName="fill-opacity"
+          attributeName="fillOpacity"
           begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+2.2s"
           dur="0.4s"
           values="1;0"
@@ -180,14 +184,14 @@ export const SunIcon = ({ className, ...rest }) => (
       <path d="M13.61 5.25L15.25 4l-2.06-.05L12.5 2l-.69 1.95L9.75 4l1.64 1.25l-.59 1.98l1.7-1.17l1.7 1.17z">
         <animate
           fill="freeze"
-          attributeName="fill-opacity"
+          attributeName="fillOpacity"
           begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+3s"
           dur="0.4s"
           values="0;1"
         />
         <animate
           fill="freeze"
-          attributeName="fill-opacity"
+          attributeName="fillOpacity"
           begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+5.2s"
           dur="0.4s"
           values="1;0"
@@ -196,14 +200,14 @@ export const SunIcon = ({ className, ...rest }) => (
       <path d="M19.61 12.25L21.25 11l-2.06-.05L18.5 9l-.69 1.95l-2.06.05l1.64 1.25l-.59 1.98l1.7-1.17l1.7 1.17z">
         <animate
           fill="freeze"
-          attributeName="fill-opacity"
+          attributeName="fillOpacity"
           begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+0.4s"
           dur="0.4s"
           values="0;1"
         />
         <animate
           fill="freeze"
-          attributeName="fill-opacity"
+          attributeName="fillOpacity"
           begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+2.8s"
           dur="0.4s"
           values="1;0"
@@ -212,14 +216,14 @@ export const SunIcon = ({ className, ...rest }) => (
       <path d="m20.828 9.731l1.876-1.439l-2.366-.067L19.552 6l-.786 2.225l-2.366.067l1.876 1.439L17.601 12l1.951-1.342L21.503 12z">
         <animate
           fill="freeze"
-          attributeName="fill-opacity"
+          attributeName="fillOpacity"
           begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+3.4s"
           dur="0.4s"
           values="0;1"
         />
         <animate
           fill="freeze"
-          attributeName="fill-opacity"
+          attributeName="fillOpacity"
           begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+5.6s"
           dur="0.4s"
           values="1;0"
@@ -319,10 +323,10 @@ export const MoonIcon = ({ className, ...rest }) => (
           begin="1.2s"
           dur="0.2s"
           values="M12 19v1M19 12h1M12 5v-1M5 12h-1;M12 21v1M21 12h1M12 3v-1M3 12h-1"
-        />
+        />{" "}
         <animate
           fill="freeze"
-          attributeName="stroke-dashoffset"
+          attributeName="strokeDashoffset"
           begin="1.2s"
           dur="0.2s"
           values="2;0"
@@ -335,10 +339,10 @@ export const MoonIcon = ({ className, ...rest }) => (
           begin="1.5s"
           dur="0.2s"
           values="M17 17l0.5 0.5M17 7l0.5 -0.5M7 7l-0.5 -0.5M7 17l-0.5 0.5;M18.5 18.5l0.5 0.5M18.5 5.5l0.5 -0.5M5.5 5.5l-0.5 -0.5M5.5 18.5l-0.5 0.5"
-        />
+        />{" "}
         <animate
           fill="freeze"
-          attributeName="stroke-dashoffset"
+          attributeName="strokeDashoffset"
           begin="1.5s"
           dur="1.2s"
           values="2;0"
@@ -354,9 +358,10 @@ export const MoonIcon = ({ className, ...rest }) => (
     </g>
     <g fill="currentColor">
       <path d="M15.22 6.03L17.75 4.09L14.56 4L13.5 1L12.44 4L9.25 4.09L11.78 6.03L10.87 9.09L13.5 7.28L16.13 9.09L15.22 6.03Z">
+        {" "}
         <animate
           fill="freeze"
-          attributeName="fill-opacity"
+          attributeName="fillOpacity"
           dur="0.4s"
           values="1;0"
         />
