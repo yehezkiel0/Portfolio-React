@@ -157,7 +157,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   );
 };
 
-const projects = () => {
+const Projects = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   // Simple page loading animation
@@ -215,9 +215,8 @@ const projects = () => {
                   <div className="col-span-12">
                     <FeaturedProject
                       title="Sales Marketing Dashboard"
-                      img={project1}
-                      summary={
-                        "The latest project I'm working on involves displaying marketing data from a company, starting from income increase graphs to social media visitor growth. This entails utilizing the data provided by the IT division team."
+                      img={project1}                      summary={
+                        "The latest project I&apos;m working on involves displaying marketing data from a company, starting from income increase graphs to social media visitor growth. This entails utilizing the data provided by the IT division team."
                       }
                       link="https://sales-marketing-app.netlify.app/"
                       github="https://github.com/yehezkiel0/Marketing-App"
@@ -291,4 +290,4 @@ const projects = () => {
   );
 };
 
-export default projects;
+export default Projects;

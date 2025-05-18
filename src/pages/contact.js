@@ -185,7 +185,7 @@ const Contact = () => {
     // Simulate form submission
     try {
       // Here you would typically send the form data to your backend
-      // For now, let's just simulate a successful submission after a delay
+      // For now, let&apos;s just simulate a successful submission after a delay
       await new Promise((resolve) => setTimeout(resolve, 1500));
 
       setSubmitSuccess(true);
@@ -219,7 +219,7 @@ const Contact = () => {
 
       <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
-          <AnimatedText text="Let's Connect" className="mb-8" />
+          <AnimatedText text="Let&apos;s Connect" className="mb-8" />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
             {/* Contact Information Section */}
@@ -231,13 +231,12 @@ const Contact = () => {
             >
               <h2 className="text-2xl font-bold mb-4 text-dark dark:text-light">
                 Get In Touch
-              </h2>
+              </h2>{" "}
               <p className="text-dark/70 dark:text-light/70">
-                I'm always interested in hearing about new projects,
+                I&apos;m always interested in hearing about new projects,
                 opportunities, or just connecting with fellow developers. Feel
                 free to reach out!
               </p>
-
               <div className="space-y-4 mt-6">
                 <SocialLink
                   href="mailto:yehezkielimannuel1@gmail.com"
@@ -255,7 +254,6 @@ const Contact = () => {
                   label="linkedin.com/in/yehezkiel-imannuel"
                 />
               </div>
-
               <motion.div
                 className="bg-dark/5 dark:bg-light/5 p-6 rounded-lg mt-8"
                 whileHover={{ scale: 1.02 }}
@@ -263,10 +261,10 @@ const Contact = () => {
               >
                 <h3 className="text-xl font-bold mb-2">
                   Looking For Collaboration?
-                </h3>
+                </h3>{" "}
                 <p className="text-dark/70 dark:text-light/70 mb-4">
-                  I'm open to freelance opportunities, full-time positions, and
-                  interesting projects.
+                  I&apos;m open to freelance opportunities, full-time positions,
+                  and interesting projects.
                 </p>
                 <Link
                   href="/resume.pdf"
@@ -355,8 +353,10 @@ const Contact = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.3 }}
                   >
+                    {" "}
                     <p>
-                      Thank you for your message! I'll get back to you soon.
+                      Thank you for your message! I&apos;ll get back to you
+                      soon.
                     </p>
                   </motion.div>
                 )}
