@@ -297,7 +297,7 @@ const NavBar = () => {
               href="/"
               className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-primaryDark dark:from-primaryDark dark:to-primary"
             >
-              YIM
+              YI
             </Link>
           </motion.div>
         </div>

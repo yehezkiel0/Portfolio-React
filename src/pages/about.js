@@ -24,19 +24,26 @@ const about = () => {
                 About Me
               </h2>
               <p className="my-4 font-medium cursor-default">
-                I&apos;m passionate about creating dynamic, user-friendly web
-                applications that help businesses and individuals achieve their
-                goals. As a full-stack developer, I have experience working with
-                both front-end and back-end technologies, and I&apos;m always
-                eager to learn more.
+                I&apos;m a full-stack web developer with a strong passion for
+                building scalable and user-centric applications that solve
+                real-world problems. With hands-on experience using PHP and
+                JavaScript, I&apos;ve developed both frontend and backend
+                systems—from responsive interfaces to robust server-side logic.
+                I take pride in creating clean, maintainable code and designing
+                systems that prioritize performance, efficiency, and user
+                experience. I&apos;ve contributed to impactful projects
+                including integrated platforms and AI-powered solutions that
+                improved operational workflows for businesses.
               </p>
               <p className="my-4 font-medium cursor-default">
-                I&apos;m a detail-oriented problem solver who enjoys tackling
-                complex challenges, and I&apos;m always looking for
-                opportunities to improve my skills and expand my knowledge.
-                Whether it&apos;s learning a new programming language or
-                exploring the latest web development tools and frameworks,
-                I&apos;m up for the challenge.
+                As a detail-oriented developer, I enjoy tackling technical
+                challenges and continuously refining my skills. I believe that
+                great development comes from a balance of logic, creativity, and
+                constant learning. Whether it&apos;s exploring new frameworks,
+                optimizing existing architecture, or automating complex
+                processes, I&apos;m always eager to push boundaries and deliver
+                results. My goal is not just to write code, but to build
+                solutions that truly make a difference.
               </p>
             </div>
             <div className="col-span-4 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-4 dark:bg-dark dark:border-light md:col-span-8">

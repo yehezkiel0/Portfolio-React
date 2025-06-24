@@ -215,7 +215,8 @@ const Projects = () => {
                   <div className="col-span-12">
                     <FeaturedProject
                       title="Sales Marketing Dashboard"
-                      img={project1}                      summary={
+                      img={project1}
+                      summary={
                         "The latest project I&apos;m working on involves displaying marketing data from a company, starting from income increase graphs to social media visitor growth. This entails utilizing the data provided by the IT division team."
                       }
                       link="https://sales-marketing-app.netlify.app/"

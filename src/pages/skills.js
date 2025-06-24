@@ -56,36 +56,52 @@ const skills = () => {
             />
             <ul className="w-full flex flex-col items-start justify-start pl-[70px] sm:pl-[60px]">
               <Details
-                title="Next.js"
-                description="(June 2023): With Next.js, I learned how to build server-side rendered React applications that are fast, scalable, and easy to maintain. I learned how to use Next.js features like automatic code splitting, server-side rendering, and static site generation to improve performance and user experience."
+                title="HTML & CSS"
+                description="Fundamental in crafting structured content and styling responsive, accessible, and semantic web interfaces using modern layout techniques like Flexbox and Grid."
               />
               <Details
                 title="JavaScript"
-                description="(April 2023): By harnessing JavaScript, I've become adept at leveraging a utility-driven framework, swiftly crafting responsive layouts, typography, and personalized designs to seamlessly adapt to various project requirements."
-              />
-              <Details
-                title="Tailwind CSS"
-                description="(April 2023): Leveraging Tailwind CSS, I mastered a utility-based framework, swiftly creating responsive layouts, typography, and customized designs to seamlessly fit diverse project needs."
-              />
-              <Details
-                title="Figma"
-                description="(January 2023): For Figma, I learned how to use the cloud-based design tool to create user interfaces, prototypes, and animations for web and mobile applications. I learned how to use Figma's tools and features to design layouts, create icons and other graphical elements, and collaborate with others on design projects."
-              />
-              <Details
-                title="MySQL"
-                description="(November 2022): With MySQL, I acquired the skills to develop intricate database structures, managing data through tables, relationships, and queries."
+                description="Proficient in core JavaScript concepts, DOM manipulation, and building interactive web interfaces using modern ES6+ features."
               />
               <Details
                 title="PHP"
-                description="(Augustus 2022): By harnessing PHP, I became proficient in a versatile server-side scripting language, swiftly crafting dynamic functionalities and tailored solutions to seamlessly meet varied project requirements."
+                description="Skilled in developing dynamic server-side applications, form processing, session handling, and building custom logic with clean code structure."
               />
               <Details
-                title="React"
-                description="(September 2023): With React, I learned how to build more complex user interfaces using components and props. I learned about the virtual DOM, JSX syntax, and how to use React's state and lifecycle methods to manage component behavior."
+                title="MySQL"
+                description="Experienced in designing relational databases, writing complex queries, and integrating structured data handling within web applications."
               />
               <Details
-                title="Node.js"
-                description="(July 2023): With Node.js, I learned how to use JavaScript to build server-side web applications. I learned about the Node.js runtime, how to use modules, and how to work with the file system and other built-in APIs."
+                title="Laravel"
+                description="Utilized Laravel for building scalable, secure, and maintainable backend systems with MVC architecture, routing, authentication, and Eloquent ORM."
+              />
+              <Details
+                title="Tailwind CSS"
+                description="Expert in using utility-first classes to rapidly build modern, responsive, and consistent UI components with maintainable design systems."
+              />
+              <Details
+                title="Vue.js"
+                description="Familiar with reactive component-based development using Vue, handling state, routing, and transitions for interactive web apps."
+              />
+              <Details
+                title="Nuxt.js"
+                description="Used Nuxt.js for server-side rendering and static site generation, improving SEO and performance of Vue-based applications."
+              />
+              <Details
+                title="React.js"
+                description="Skilled in building modular and reusable UI components using React, leveraging state management, hooks, and JSX for dynamic interfaces."
+              />
+              <Details
+                title="Next.js"
+                description="Built production-ready React applications with features like static site generation (SSG), server-side rendering (SSR), and API routes."
+              />
+              <Details
+                title="TypeScript"
+                description="Applied TypeScript for type-safe coding in JavaScript-based projects, improving code maintainability, scalability, and developer experience."
+              />
+              <Details
+                title="Express.js"
+                description="Built backend RESTful APIs using Express, handling routing, middleware, and integration with databases and third-party services."
               />
             </ul>
           </div>

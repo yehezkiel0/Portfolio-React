@@ -19,8 +19,7 @@ const Footer = () => {
           </span>
           by&nbsp;
           <Link href={"/"} className="underline underline-offset-2">
-            YI.
-            <span className="text-primary dark:text-primaryDark">M</span>
+            Y<span className="text-primary dark:text-primaryDark">I</span>
           </Link>
         </div>
       </Layout>

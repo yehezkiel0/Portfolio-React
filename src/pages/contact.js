@@ -210,7 +210,7 @@ const Contact = () => {
   return (
     <>
       <Head>
-        <title>YIM | Contact Me</title>
+        <title>YI | Contact Me</title>
         <meta
           name="description"
           content="Get in touch with Yehezkiel for collaboration, job opportunities, or just to say hello!"
@@ -219,7 +219,7 @@ const Contact = () => {
 
       <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
-          <AnimatedText text="Let&apos;s Connect" className="mb-8" />
+          <AnimatedText text="Let's Connect" className="mb-8" />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
             {/* Contact Information Section */}
@@ -267,7 +267,7 @@ const Contact = () => {
                   and interesting projects.
                 </p>
                 <Link
-                  href="/resume.pdf"
+                  href="/cv.pdf"
                   target="_blank"
                   className="inline-flex items-center px-4 py-2 bg-primary text-light dark:bg-primaryDark dark:text-dark rounded-lg transition-transform duration-300 hover:scale-105"
                 >

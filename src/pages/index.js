@@ -83,17 +83,16 @@ const buttonVariants = {
 
 export default function Home() {
   const skills = [
-    "Full Stack Development",
+    "Web Development",
+    "Frontend Web Development",
+    "Backend Web Development",
     "UI/UX Design",
-    "React",
-    "Next.js",
-    "Node.js",
   ];
 
   return (
     <>
       <Head>
-        <title>YIM | Home Page</title>
+        <title>YI | Home Page</title>
         <meta
           name="description"
           content="Portfolio of Yehezkiel Imannuel - Full Stack Web Developer with a passion for creating engaging user experiences"
@@ -157,7 +156,7 @@ export default function Home() {
                   whileTap="tap"
                 >
                   <Link
-                    href="/resume.pdf"
+                    href="/cv.pdf"
                     target="_blank"
                     download={true}
                     className="flex items-center bg-dark text-light p-2 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:text-dark dark:bg-light hover:dark:bg-dark hover:dark:text-light hover:dark:border-light md:p-2 md:px-4 md:text-base transition-all duration-300"
@@ -194,13 +193,13 @@ export default function Home() {
               >
                 <div className="flex flex-col items-center">
                   <div className="text-4xl font-bold text-primary dark:text-primaryDark">
-                    3+
+                    2+
                   </div>
                   <div className="text-sm">Years Experience</div>
                 </div>
                 <div className="flex flex-col items-center">
                   <div className="text-4xl font-bold text-primary dark:text-primaryDark">
-                    30+
+                    12+
                   </div>
                   <div className="text-sm">Projects</div>
                 </div>
@@ -208,7 +207,7 @@ export default function Home() {
                   <div className="text-4xl font-bold text-primary dark:text-primaryDark">
                     10+
                   </div>
-                  <div className="text-sm">Clients</div>
+                  <div className="text-sm">Collaborations</div>
                 </div>
               </motion.div>
             </div>
