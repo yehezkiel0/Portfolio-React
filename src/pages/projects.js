@@ -6,10 +6,11 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import project1 from "../../public/images/projects/marketing-app.png";
-import project2 from "../../public/images/projects/saling-jaga.png";
-import project3 from "../../public/images/projects/quternak.png";
-import project4 from "../../public/images/projects/medical-remainder.png";
+import project1 from "../../public/images/projects/project-acp.png";
+import project2 from "../../public/images/projects/marketing-app.png";
+import project3 from "../../public/images/projects/saling-jaga.png";
+import project4 from "../../public/images/projects/quternak.png";
+import project5 from "../../public/images/projects/medical-remainder.png";
 
 // Animation variants for project cards
 const cardVariants = {
@@ -61,7 +62,15 @@ const buttonVariants = {
   tap: { scale: 0.97 },
 };
 
-const FeaturedProject = ({ type, title, summary, img, link, github }) => {
+const FeaturedProject = ({
+  type,
+  title,
+  summary,
+  img,
+  link,
+  github,
+  isPrivate = false,
+}) => {
   return (
     <motion.article
       className="w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 my-6 dark:bg-dark dark:border-light lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4"
@@ -85,17 +94,30 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
             priority
           />
         </Link>
-      </motion.div>
-
+      </motion.div>{" "}
       <div className="w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
-        <motion.span
-          className="text-primary dark:text-primaryDark font-medium text-xl cursor-default xs:text-base"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.2, duration: 0.5 }}
-        >
-          {type}
-        </motion.span>
+        <div className="flex items-center gap-3 mb-1">
+          <motion.span
+            className="text-primary dark:text-primaryDark font-medium text-xl cursor-default xs:text-base"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+          >
+            {type}
+          </motion.span>
+          <motion.span
+            className={`px-2 py-1 text-xs font-semibold rounded-full ${
+              isPrivate
+                ? "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200"
+                : "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200"
+            }`}
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.25, duration: 0.3 }}
+          >
+            {isPrivate ? "Private" : "Public"}
+          </motion.span>
+        </div>
         <Link
           href={link || "#"}
           target={link ? "_blank" : "_self"}
@@ -213,15 +235,17 @@ const Projects = () => {
                   custom={0}
                 >
                   <div className="col-span-12">
+                    {" "}
                     <FeaturedProject
-                      title="Sales Marketing Dashboard"
+                      title="ACP Tours & Travel"
                       img={project1}
                       summary={
-                        "The latest project I&apos;m working on involves displaying marketing data from a company, starting from income increase graphs to social media visitor growth. This entails utilizing the data provided by the IT division team."
+                        "A website project for a travel agency that provides tour packages, hotel bookings, and flight reservations. The website features a user-friendly interface, allowing users to easily navigate through various travel options and make bookings online."
                       }
-                      link="https://sales-marketing-app.netlify.app/"
-                      github="https://github.com/yehezkiel0/Marketing-App"
+                      link="https://acptour.site"
+                      github="https://github.com/yehezkiel0/ACP"
                       type="Featured Project"
+                      isPrivate={true}
                     />
                   </div>
                 </motion.div>
@@ -232,15 +256,17 @@ const Projects = () => {
                   custom={1}
                 >
                   <div className="col-span-12">
+                    {" "}
                     <FeaturedProject
-                      title="Saling Jaga"
+                      title="Sales Marketing Dashboard"
                       img={project2}
                       summary={
-                        "A collaborative project with friends to create a portal for reporting cases of sexual violence that occur within the college environment."
+                        "The latest project I&apos;m working on involves displaying marketing data from a company, starting from income increase graphs to social media visitor growth. This entails utilizing the data provided by the IT division team."
                       }
-                      link=""
-                      github="https://github.com/yehezkiel0/Saling-Jaga"
+                      link="https://sales-marketing-app.netlify.app/"
+                      github="https://github.com/yehezkiel0/Marketing-App"
                       type="Featured Project"
+                      isPrivate={false}
                     />
                   </div>
                 </motion.div>
@@ -251,15 +277,17 @@ const Projects = () => {
                   custom={2}
                 >
                   <div className="col-span-12">
+                    {" "}
                     <FeaturedProject
-                      title="Quternak"
+                      title="Saling Jaga"
                       img={project3}
                       summary={
-                        " college project based on livestock business and its products, aimed at facilitating the community in finding livestock for the purpose of sacrificial offerings (Qurban)."
+                        "A collaborative project with friends to create a portal for reporting cases of sexual violence that occur within the college environment."
                       }
                       link=""
-                      github="https://github.com/yehezkiel0/PROJECT-QUTERNAK"
+                      github="https://github.com/yehezkiel0/Saling-Jaga"
                       type="Featured Project"
+                      isPrivate={false}
                     />
                   </div>
                 </motion.div>
@@ -270,15 +298,38 @@ const Projects = () => {
                   custom={3}
                 >
                   <div className="col-span-12">
+                    {" "}
+                    <FeaturedProject
+                      title="Quternak"
+                      img={project4}
+                      summary={
+                        " college project based on livestock business and its products, aimed at facilitating the community in finding livestock for the purpose of sacrificial offerings (Qurban)."
+                      }
+                      link=""
+                      github="https://github.com/yehezkiel0/PROJECT-QUTERNAK"
+                      type="Featured Project"
+                      isPrivate={false}
+                    />
+                  </div>
+                </motion.div>
+
+                <motion.div
+                  className="grid grid-cols-12"
+                  variants={cardVariants}
+                  custom={4}
+                >
+                  <div className="col-span-12">
+                    {" "}
                     <FeaturedProject
                       title="Medical Remainder"
-                      img={project4}
+                      img={project5}
                       summary={
                         "A university project to create a website implementing the MVC (Model-View-Controller) architecture with a health-themed focus. The feature entails a reminder system for patient treatments."
                       }
                       link=""
                       github="https://github.com/yehezkiel0/Medical-Remainder"
                       type="Featured Project"
+                      isPrivate={false}
                     />
                   </div>
                 </motion.div>
